@@ -6,7 +6,7 @@ access_key='52098da869d1d28fa64cca7888221275'
 while [ "$url_suffix" != "$end_string" ]; do
   echo "$url_prefix$url_suffix;" >> totalText.txt
   curl "http://api.pdflayer.com/api/convert?document_url=$url_prefix$url_suffix&access_key=$access_key" >> $url_suffix.pdf
-  curl -v $url_prefix$url_suffix | grep -m 1 '>next' | cut -d '"' -f 4 >rishi.html
-  url_suffix=$(<rishi.html)
+  curl -v $url_prefix$url_suffix | grep -m 1 '>next' | cut -d '"' -f 4 >temp.html
+  url_suffix=$(<temp.html)
 done
 echo $url_suffix
