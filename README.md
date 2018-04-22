@@ -1,5 +1,5 @@
 # JavatpointAsPdf
-You can download using this bash script pages of javatpoint as pdf
+You can download using this bash script, pages of javatpoint as pdf
 
 ```
 url_prefix='https://www.javatpoint.com/'
