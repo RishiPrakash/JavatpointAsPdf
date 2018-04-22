@@ -21,6 +21,10 @@ do ./bashScriptName to run the script.
 ### Something to take care
 it creates 2 extra files 1. temp.html which is just a temp file and you can delete it after task is completed
                          2. totalText.txt, it contains all URL which have been converted to PDF so far
+                         
+### What is more in pipeline
+* Use proper HTML parser to parse and read the HTML page content and get next page URL
+
 
 ## License
 
